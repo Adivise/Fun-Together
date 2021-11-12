@@ -3,7 +3,7 @@ const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "doodlecrew",
   category: "Games",
-  aliases: ["doodlecrew", "dc"],
+  aliases: ["dc"],
   cooldown: 3,
   description: "play doodlecrew with friend!",
 
