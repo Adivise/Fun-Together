@@ -3,6 +3,10 @@
 - [x] Easy to use
 - [x] Have Fun
 
+## NEED USE WITH PREFIX?
+
+[v1.0.0](https://github.com/Adivise/Fun-Together/releases/tag/1.0.0)
+
 ## Requirements
 
 Node.js V16+ **[Download](https://nodejs.org/dist/v17.0.1/node-v17.0.1-x64.msi)**
