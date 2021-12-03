@@ -19,7 +19,7 @@ module.exports = {
                 new MessageButton()
                     .setLabel("Invite")
                     .setStyle("LINK")
-                    .setURL(`https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8`)
+                    .setURL(`https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`)
                     .setEmoji("🔗")
             )
             .addComponents(
