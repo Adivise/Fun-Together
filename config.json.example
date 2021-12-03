@@ -1,4 +1,5 @@
 {
     "TOKEN": "TOKEN_HERE",
-    "PREFIX": "!"
+    "GUILD_ID": "GUILD_ID",
+    "CLIENT_ID": "BOT_ID"
 }

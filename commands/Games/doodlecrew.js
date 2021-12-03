@@ -1,25 +1,31 @@
-const { MessageEmbed } = require("discord.js");
+const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
 
 module.exports = {
   name: "doodlecrew",
-  category: "Games",
-  aliases: ["dc"],
-  cooldown: 3,
   description: "play doodlecrew with friend!",
+  botPerms: ["SEND_MESSAGES", "CREATE_INSTANT_INVITE", "EMBED_LINKS"],
+    run: async (interaction, client) => {
+      await interaction.deferReply({ ephemeral: false });
 
-    run: async (client, message, args) => {
-      const msg = await message.channel.send("Generating...");
-
-      if(message.member.voice.channel) {
-        client.discordTogether.createTogetherCode(message.member.voice.channel.id, 'doodlecrew').then(async invite => {
+      if(!interaction.member.voice.channel) return interaction.editReply('You must be in a voice channel to use this command!'); {
+        client.together.createTogetherCode(interaction.member.voice.channel.id, 'doodlecrew').then(async invite => {
 
           const embed = new MessageEmbed()
-          .setTitle("Doodle Crew")
+          .setAuthor("Doodle Crew", client.user.displayAvatarURL())
           .setColor("#000001")
-          .setDescription(`**[CLICK HERE!](${invite.code})**\n\`\`\`\nNote: This feature is not availble for mobile users!\`\`\``)
-          .setFooter(`Requested by: ${message.author.tag}`, message.author.displayAvatarURL())
+          .setDescription(`\`\`\`\nNote: This feature is not availble for mobile users!\`\`\``)
+          .setFooter(`Requested By: ${interaction.user.tag}`, interaction.user.displayAvatarURL())
 
-          msg.edit({ content: " ", embeds: [embed] });
+          const row = new MessageActionRow()
+          .addComponents(
+              new MessageButton()
+              .setLabel('Click Here')
+              .setURL(`${invite.code}`)
+              .setStyle('LINK')
+              .setEmoji('🔗')
+          )
+
+          interaction.editReply({ embeds: [embed], components: [row] });
         });
       };
     }

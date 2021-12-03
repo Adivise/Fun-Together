@@ -1,6 +1,7 @@
-## Watch-Together
-
-![see](https://i.imgur.com/5qeHuGr.jpg)
+## Feather
+- [x] SlashCommand
+- [x] Easy to use
+- [x] Have Fun
 
 ## Requirements
 
@@ -11,11 +12,13 @@ Discord Bot Token **[Guide](https://discordjs.guide/preparations/setting-up-a-bo
 ## Installation
 
 ```
-git clone https://github.com/Adivise/Watch-Together
-cd Watch-Together
+git clone https://github.com/Adivise/Fun-Together
+cd Fun-Together
 npm install
 ```
-After installation finishes you can use `node .` to start the bot.
+- 1. After installation finishes you can use `npm run start` or `node index.js` to start the bot.
+- 2. After you run the bot you can use `npm run register` or `node registerSlash.js` to register slashcommand. (on use global (/) not have? please kick bot and invite again!) 
+- 3. You want yo clearing slashcommand you can use `npm run clear` or `node clearSlash.js` to clearing slashcommand. (same header)
 
 ## Configuration
 
@@ -24,37 +27,34 @@ Copy or Rename `config.json.example` to `config.json` and fill out the values:
 ```json
 {
     "TOKEN": "TOKEN_HERE",
-    "PREFIX": "!"
+    "GUILD_ID": "GUILD_ID",
+    "CLIENT_ID": "BOT_ID"
 }
 ```
 
 ## Features & Commands
 
-> Note: The default prefix is '!'
+> Note: The bot using slashcommand (/)
 
 🎶 **Watch Commands!** 
-- youtube (!yt, !youtube)
-- youtubedev (!ytdev, !youtubedev)
+- /youtube
+- /youtubedev
 
 ⏺ **Games Commands!**
-- awkword (!awkword, !aw)
-- betrayal (!betrayal, !bt, !by, !bet)
-- checker (!checkers, !checker)
-- chess (!chess)
-- chessdev (!chessdev)
-- doodlecrew (!doodlecrew, !dc)
-- fishinton (!fishinton, !fishing, !ft)
-- letterlite (!letterlite, !letter, !lt)
-- poker (!poker)
-- spellcast (!spellcast, !sc)
-- wordsnack (!wordsnack, !ws)
+- /awkword
+- /betrayal
+- /checker
+- /chess
+- /chessdev
+- /doodlecrew
+- /fishinton
+- /letterlite
+- /poker
+- /spellcast
+- /wordsnack
+- /puttparty
 
-📑 **Utilities Commands!**
-- Help (#help, #h, #halp, #commands)
-
-## Picture
+## Screenshots
 
 ![see](https://i.imgur.com/lIysU6A.png)
 ![see](https://i.imgur.com/c2vFUyI.png)
-		
-thx for handler [Tomato6966](https://github.com/Tomato6966)
