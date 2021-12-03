@@ -16,9 +16,11 @@ git clone https://github.com/Adivise/Fun-Together
 cd Fun-Together
 npm install
 ```
-- 1. After installation finishes you can use `npm run start` or `node index.js` to start the bot.
-- 2. After you run the bot you can use `npm run register` or `node registerSlash.js` to register slashcommand. (on use global (/) not have? please kick bot and invite again!) 
-- 3. You want yo clearing slashcommand you can use `npm run clear` or `node clearSlash.js` to clearing slashcommand. (same header)
+ 1.After installation finishes you can use `npm run start` or `node index.js` to start the bot.
+ 
+ 2.After you run the bot you can use `npm run register` or `node registerSlash.js` to register slashcommand. (on use global (/) not have? please kick bot and invite again!) 
+ 
+ 3.You want yo clearing slashcommand you can use `npm run clear` or `node clearSlash.js` to clearing slashcommand. (same header)
 
 ## Configuration
 
