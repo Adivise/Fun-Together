@@ -5,7 +5,7 @@
 
 ## NEED USE WITH PREFIX?
 
-[v1.0.0](https://github.com/Adivise/Fun-Together/releases/tag/1.0.0)
+[v1.0.0](https://github.com/Adivise/Fun-Together/releases/tag/1.0.0) go download `Source code (zip)`
 
 ## Requirements
 
